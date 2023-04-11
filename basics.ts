@@ -25,7 +25,7 @@ const person: IPerson = {
 }
 console.log( person.first)
 
-// Records => use objects like maps
+// Records => use objects like maps  and define thr key and value types
 /* const ids = {
      10:'a',
      20:'b',
