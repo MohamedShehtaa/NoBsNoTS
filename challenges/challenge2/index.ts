@@ -15,3 +15,8 @@ function myFilter<T>(items:T[],cb:(V:T) => boolean): T[]{
 
 console.log(myFilter([1,2,3,4,5,6,7,8],(v)=> v%2 ===0 ))
 
+// map method
+function myMab <T,K>(items:T[],cb:(V:T) => K) : K[]{
+    return items.reduce((a:K[],v) => ([...a, cb(v)]) ,[])
+}
+console.log(myMab([1,2,3,4,5,6,7,8],(v)=>( v*2).toString()))
